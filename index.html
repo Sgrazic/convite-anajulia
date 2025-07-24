@@ -1,47 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Convite - Ana Júlia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Ana Júlia</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #fff;
+      background-color: #fff;
       display: flex;
       justify-content: center;
     }
     .container {
       position: relative;
-      width: 360px;
+      width: 100%;
+      max-width: 900px;
     }
-    .container img {
+    img {
       width: 100%;
       display: block;
     }
-    .icon {
+    a {
       position: absolute;
-      width: 70px;
-      height: 70px;
-      cursor: pointer;
+      display: block;
     }
+    /* Link: Local da Festa */
     .local {
-      bottom: 100px;
-      left: 30px;
+      left: 10%;
+      bottom: 160px;
+      width: 80px;
+      height: 80px;
     }
-    .whatsapp {
-      bottom: 100px;
-      right: 30px;
+    /* Link: Confirmar Presença */
+    .confirmar {
+      right: 10%;
+      bottom: 160px;
+      width: 80px;
+      height: 80px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="convite.jpg" style="width: 100%; max-width: 1400px; display: block; margin: auto;">
+    <img src="CONVITE.jpg" alt="Convite Ana Júlia">
 
-    <a href="https://maps.app.goo.gl/AJQY2qmezGooz9gW6" target="_blank" class="icon local" title="Ver Local da Festa"></a>
-    <a href="https://wa.me/5575981319892?text=Confirmo%20minha%20presença%20na%20festa%20de%2015%20anos%20da%20Ana%20Júlia!" target="_blank" class="icon whatsapp" title="Confirmar Presença"></a>
+    <!-- Link do Google Maps -->
+    <a class="local" href="https://maps.app.goo.gl/yieb5aHGwN17iEcHA" target="_blank" title="Ver Local da Festa"></a>
+
+    <!-- Link do WhatsApp -->
+    <a class="confirmar" href="https://wa.me/5575981319892" target="_blank" title="Confirmar Presença"></a>
   </div>
 </body>
 </html>
